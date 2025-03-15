@@ -9,6 +9,7 @@ apt-get install -y wget xfonts-base xfonts-75dpi openssl
 
 # Add a source for libssl1.0-dev
 echo "deb http://security.ubuntu.com/ubuntu bionic-security main" | tee /etc/apt/sources.list.d/docker.list
+apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3B4FE6ACC0B21F32
 apt update && apt-cache policy libssl1.0-dev
 apt-get install libssl1.0-dev
 

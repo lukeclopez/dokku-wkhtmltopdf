@@ -5,7 +5,7 @@ APP="$1"; IMAGE="dokku/$APP"
 echo "-----> Installing wkhtmltox ..."
 COMMAND=$(cat <<EOF
 apt-get -y  update 
-apt-get install -y wget xfonts-base xfonts-75dpi libssl1.0-dev openssl
+apt-get install -y wget xfonts-base xfonts-75dpi openssl
 
 # Add a source for libssl1.0-dev
 sudo nano /etc/apt/sources.list
